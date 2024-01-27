@@ -1,0 +1,30 @@
+---
+title: Welcome to Send Movie Script
+description: Send Movie Script is a website that helps you send a movie script line by line to your friends.
+template: splash
+editUrl: false
+lastUpdated: false
+hero:
+  tagline: Website that helps you send a movie script line by line to your friends.
+  image:
+    file: ../../../assets/eva.webp
+  actions:
+    - text: How to work?
+      link: /en/guides/how-to-work/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/adrian-ub/send-movie-script
+      icon: external
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card title="Movie scripts" icon="open-book">
+    Find movie scripts in your preferred language.
+  </Card>
+  <Card title="Send to your friends" icon="laptop">
+    Open the browser console and copy the code to send to your friends.
+  </Card>
+</CardGrid>

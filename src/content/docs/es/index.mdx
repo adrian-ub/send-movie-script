@@ -1,0 +1,30 @@
+---
+title: Bienvenido a Send Movie Script
+description: Send Movie Script es un sitio web que te ayuda a enviar un guión de película línea por línea a tus amigos.
+template: splash
+editUrl: false
+lastUpdated: false
+hero:
+  tagline: Sitio web que te ayuda a enviar un guión de película línea por línea a tus amigos.
+  image:
+    file: ../../../assets/eva.webp
+  actions:
+    - text: ¿Cómo funciona?
+      link: /es/guides/how-to-work/
+      icon: right-arrow
+      variant: primary
+    - text: Ver en GitHub
+      link: https://github.com/adrian-ub/send-movie-script
+      icon: external
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card title="Guíones de películas" icon="open-book">
+    Encontrar guíones de películas en tu idioma preferido.
+  </Card>
+  <Card title="Envía a tus amigos" icon="laptop">
+    Abre la consola del navegador y copia el código para enviar a tus amigos.
+  </Card>
+</CardGrid>

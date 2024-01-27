@@ -1,0 +1,20 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import "@astrojs/starlight/style/markdown.css";
+
+import RenderScript from "./render-script/RenderScript.astro";
+
+const isMovie = Astro.props.slug.includes("movies");
+---
+
+<div class="sl-markdown-content">
+  {
+    isMovie ? (
+      <RenderScript>
+        <slot />
+      </RenderScript>
+    ) : (
+      <slot />
+    )
+  }
+</div>

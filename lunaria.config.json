@@ -1,0 +1,22 @@
+{
+  "repository": {
+    "name": "adrian-ub/send-movie-script"
+  },
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "locales": [
+    {
+      "label": "Español",
+      "lang": "es"
+    }
+  ],
+  "files": [
+    {
+      "location": "src/content/docs/**/*.{md,mdx}",
+      "pattern": "src/content/docs/@lang/@path",
+      "type": "universal"
+    }
+  ]
+}
