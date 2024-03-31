@@ -1,7 +1,7 @@
-import { compiledContent } from "./scripts/whatsapp.md";
+import whatsAppContent from "./scripts/whatsapp.js?raw";
 
 export function generate(script: string) {
   return {
-    whatsapp: compiledContent().replaceAll("{{scriptRendered}}", script),
+    whatsapp: whatsAppContent.replaceAll("{{scriptRendered}}", script),
   };
 }

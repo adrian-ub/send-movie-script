@@ -1,4 +1,3 @@
-```js
 async function sendScript(scriptText) {
   const lines = scriptText
     .split(/[\n\t]+/)
@@ -37,4 +36,3 @@ sendScript(`
   `)
   .then((e) => console.log(`Finished code, ${e} messages sent`))
   .catch(console.error);
-```
